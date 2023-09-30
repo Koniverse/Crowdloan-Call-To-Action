@@ -62,6 +62,14 @@
       "error",
       "prefer-single"
     ],
+    "@typescript-eslint/quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
     "react/prop-types": [
       0
     ],

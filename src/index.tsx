@@ -3,6 +3,8 @@ import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+import { ModalProvider } from './provider/ModalProvider';
+import { ThemeProvider } from './provider/ThemeProvider';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
@@ -12,7 +14,11 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider>
+      <ModalProvider>
+        <App />
+      </ModalProvider>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
