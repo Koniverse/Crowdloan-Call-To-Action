@@ -18,9 +18,10 @@ const Component: React.FC<Props> = ({className, title = 'Countdown'}: Props) => 
   );
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const Countdown = styled(Component)<Props>(({theme: {extendToken}}: Props) => {
   return {
-    width: extendToken.collectionImageSize,
+
 
     '.__title': {
       color: 'red'

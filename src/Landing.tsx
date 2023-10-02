@@ -16,17 +16,22 @@ const Component: React.FC<Props> = ({className}: Props) => {
   return (
     <div className={CN(className)}>
       <Countdown />
+      <hr />
       <CheckContributions />
+      <hr />
       <ThenWhat />
+      <hr />
       <SimplifyProcess />
+      <hr />
       <FAQ />
     </div>
   );
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const Landing = styled(Component)<Props>(({theme: {extendToken}}: Props) => {
   return {
-    width: extendToken.collectionImageSize,
+
   };
 });
 

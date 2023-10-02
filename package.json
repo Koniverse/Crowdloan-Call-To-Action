@@ -15,7 +15,10 @@
     "react-router-dom": "^6.16.0",
     "@subwallet/react-ui": "5.1.2-b72",
     "axios": "^1.5.1",
-    "phosphor-react": "^1.4.1"
+    "phosphor-react": "^1.4.1",
+    "dayjs": "^1.11.10",
+    "mobile-detect": "^1.4.5",
+    "cross-fetch": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

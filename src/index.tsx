@@ -3,6 +3,7 @@ import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+import { AppStateProvider } from './provider/AppStateProvider';
 import { ModalProvider } from './provider/ModalProvider';
 import { ThemeProvider } from './provider/ThemeProvider';
 import App from './App';
@@ -16,7 +17,9 @@ root.render(
   <React.StrictMode>
     <ThemeProvider>
       <ModalProvider>
-        <App />
+        <AppStateProvider>
+          <App />
+        </AppStateProvider>
       </ModalProvider>
     </ThemeProvider>
   </React.StrictMode>

@@ -18,9 +18,10 @@ const Component: React.FC<Props> = ({className, title = 'SimplifyProcess'}: Prop
   );
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const SimplifyProcess = styled(Component)<Props>(({theme: {extendToken}}: Props) => {
   return {
-    width: extendToken.collectionImageSize,
+
 
     '.__title': {
       color: 'red'

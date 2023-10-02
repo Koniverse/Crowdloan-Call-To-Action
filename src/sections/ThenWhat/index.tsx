@@ -24,9 +24,10 @@ const Component: React.FC<Props> = ({className, title = 'ThenWhat'}: Props) => {
   );
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const ThenWhat = styled(Component)<Props>(({theme: {extendToken}}: Props) => {
   return {
-    width: extendToken.collectionImageSize,
+
 
     '.__title': {
       color: 'red'
